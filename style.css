@@ -1,0 +1,1286 @@
+@font-face {
+    font-family: 'Figthning';
+    src: url("./fonts/fighting\ spirit\ TBS.ttf");
+}
+@font-face {
+    font-family: 'FigthningBold';
+    src: url("./fonts/fighting\ spirit\ TBS_bold.ttf");
+}
+.ffFigthning{
+    font-family: 'Figthning';
+}
+.ffFigthningBold{
+    font-family: 'FigthningBold';
+}
+.logo-left-top {
+    position: fixed;
+    left: 0px;
+    top: -180px;
+    z-index: 9999999999;
+    transition: 0.5s ease;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 99999;
+}
+header,main,footer,.w-100{
+    width: 100%;
+}
+header{
+    background: url("./photo/header_bg.png") no-repeat;
+    background-size: cover;
+}
+.d-f-jc-ac-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.yellow{
+    color: yellow;
+}
+.white{
+    color: #fff;
+}
+.for-media{
+    position: fixed;
+    z-index: 999999999999;
+    background: #15235B;
+    color: #fff;
+    height: 100vh;
+    padding: 30px;
+    top: 0px;
+    transition: 1s ease;
+    right: 0px;
+    transform: translateX(200px);
+    display: none;
+}
+.close-div{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    z-index: 999999999;
+    color: yellow;
+    font-size: 30px;
+}
+.bar-burger{
+    color: yellow;
+    font-size:30px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    z-index: 999999999;
+    display: none;
+}
+.content-of-header{
+    width: 50%;
+    margin: 0 auto;
+}
+.for-none-media>div>a,.for-media>div>a{
+    color: #fff;
+    font-family: sans-serif;
+    padding: 10px;
+    cursor: pointer;
+}
+.for-media>div{
+    padding-bottom: 20px;
+}
+.for-media>div>a:hover{
+    color: yellow;
+}
+.for-media>div>a{
+    transition: 0.5s ease;
+}
+.content-of-header>div{
+    padding: 10px;
+}
+.for-none-media>div>a:hover{
+    border-bottom: 2px solid yellow;
+}
+.bg-yellow-color-blue{
+    background: yellow;
+    color: #1032ba !important;
+}
+.first-chapter{
+    height: 120%;
+    background: url("./photo/first-chapter.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    overflow: hidden;
+}
+.first-chapter-logo>img{
+    position: absolute;
+    width: 450px;
+    top: 50px;
+    left: 60px;
+}
+.burningman{
+    position: absolute;
+    left: 45%;
+    top: 150px;
+}
+.burningman>img{
+    width: 200px;
+}
+.in-burningman{
+    position: absolute;
+    right: -71px;
+    top: 18px;
+    transform: rotate(69deg);
+}
+.first-car-block>div>img,.second-car-block>div>img{
+    width: 280px;
+}
+.for-cars-in-first-chapter{
+    position: absolute;
+    bottom: 135px;
+    left: 35%;
+}
+.first-car-block>div,.second-car-block>div{
+    position: absolute;
+}
+.first-img-car {
+    left: -266px;
+    bottom: 124px;
+}
+.second-img-car {
+    left: -184px;
+    bottom: 42px;
+}
+.third-img-car{
+    bottom: -40px;
+    left: -66px;
+}
+.sixth-img-car {
+    bottom: 100px;
+    left: 390px;
+    z-index: 1;
+}
+.fifth-img-car {
+    bottom: 60px;
+    left: 352px;
+    z-index: 2;
+}
+.forth-img-car {
+    bottom: -19px;
+    left: 223px;
+    z-index: 3;
+}
+.e57-and-shadow{
+    position: absolute;
+    right: 40px;
+    bottom: 100px;
+}
+.e57>img{
+    width: 150px;
+}
+.e57-shadow{
+    position: absolute;
+    right: -50px;
+    animation: e57-shadow 1.5s ease infinite;
+}
+.e57{
+    animation: e57 1.5s ease infinite;
+}
+@keyframes e57{
+    0%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+@keyframes e57-shadow{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(0.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.cloud-divs{
+    position: relative;
+}
+.cloud1{
+    background: url("./photo/cloud1.png") no-repeat;
+    width: 1000px;
+    height: 1000px;
+    background-size: contain;
+    position: absolute;
+    z-index: 4;
+    animation: cloud1 20s ease infinite;
+    top: 150px;
+}
+@keyframes cloud1{
+    0%{
+        transform: translateX(0vw);
+    }
+    100%{
+        transform: translateX(100vw);
+    }
+}
+.filter{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    opacity: 0;
+}
+.second-chapter{
+    position: relative;
+}
+.pilot-div{
+    background: #111c46;
+    opacity: 0.8;
+    box-shadow: 0 0 13px #000, 0 15px 20px black;
+    height: 500px;
+    width: 100%;
+}
+.for-bg-ect{
+    background: url("./photo/center_bg.jpg") no-repeat;
+    background-position: center top;
+    width: 100%;
+    background-size: cover;
+}
+.pilot-title-div{
+    background: url("./photo/pil_h2_bg.png") no-repeat;
+    background-size: contain;
+    width: 350px;
+    height: 70px;
+    margin: 0 auto;
+}
+.title-of-pilot{
+    text-align: center;
+    font-size: 20px;
+    color: yellow;
+    font-family: 'Figthning';
+}
+.pilot-and-title-and-slider{
+    padding-top: 30px;
+}
+.pilot-img-div>img{
+    width: 410px;
+}
+.pilot-and-slider{
+    width: 73%;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    overflow-x: hidden;
+}
+.content-third{
+    width: 75%;
+    margin: 0 auto;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+}
+.fire-like {
+    width: 440px;
+    position: absolute;
+    bottom: 94px;
+    right: 139px;
+}
+.like-and-arrow{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.before-face-third{
+    font-style: italic;
+    text-align: center;
+    font-size: 25px;
+}
+.face{
+    font-size: 100px;
+    line-height: 1.5;
+    font-style: italic;
+}
+.arrow{
+    position: absolute;
+    bottom: 12px;
+    animation: arrow1 1s ease infinite;
+}
+.p-under-face-div{
+    align-items: flex-end;
+}
+.p-under-face-div>p{
+    font-family: sans-serif;
+}
+.first-under-face{
+    font-family: sans-serif;
+    width: 272px;
+    font-size: 21px;
+    font-weight: lighter;
+}
+.second-under-face{
+    font-size: 21px;
+    margin-left: 12px;
+    position: relative;
+}
+.for-likes-count{
+    position: absolute;
+    bottom: -8px;
+    left: 111px;
+    font-size: 35px;
+}
+.likes{
+    display: inline-block;
+    margin-left: 68px;
+}
+@keyframes arrow1 {
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-30px,-30px);
+    }
+    100%{
+        transform: translateX(0px,0px);
+    }
+}
+.third-chapter{
+    padding-bottom: 50px;
+}
+.forth-chapter{
+    background: #111c46;
+    opacity: 0.8;
+    box-shadow: 0 0 13px #000, 0 15px 20px black;
+    padding-top: 50px;
+    overflow: hidden;
+}
+.title-div-forth{
+    background: url("./photo/pil_h2_bg.png") no-repeat;
+    width: 500px;
+    height: 100px;
+    background-size: contain;
+    margin: 0 auto;
+}
+.p-in-title-forth{
+    text-align: center;
+    font-size: 50px;
+    text-shadow: 0 -4px 0 blue, -5px 3px 10px blue, 0 3px 0 blue, 0 4px 0 blue;
+}
+.content-of-forth{
+    width: 90%;
+    margin: 0 auto;
+}
+.content-of-forth>div>img{
+    width: 220px;
+    height: 120px;
+    object-fit: cover;
+}
+.content-of-forth>div>p{
+    text-align: center;
+}
+.content-of-forth>div{
+    margin-bottom: 50px;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.content-of-forth>div:hover{
+    transform: scale(1.2);
+}
+.content-of-forth>div:hover>p{
+    color: yellow;
+}
+.fifth-chapter{
+    padding: 50px 0px;
+}
+.title-bg-fifth{
+    width: 400px;
+    background: url("./photo/pil_h2_bg.png") no-repeat;
+    background-size: contain;
+    margin: 0px auto;}
+.title-of-fifth-p{
+    text-align: center;
+    font-size: 40px;
+    text-shadow: 0 -4px 0 blue, -5px 3px 10px blue, 0 3px 0 blue, 0 4px 0 blue;
+}
+.second-p-title-fifth{
+    font-family: cursive;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.container-fifth{
+    width: 80%;
+    background: rgba(0,0,0,0.7);
+    margin: 0 auto;
+    padding: 10px 10px 50px 10px;
+    border-radius: 12px;
+}
+.text-center{
+    text-align: center;
+}
+.second-p-in-fifth{
+    width: 307px;
+}
+.head-of-fifth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ffsans{
+    font-family: sans-serif;
+}
+.first-p-in-fifth{
+    font-family: sans-serif;
+    line-height: 2;
+}
+.second-p-in-fifth{
+    font-family: sans-serif;
+}
+.head-of-fifth>img{
+    margin-top: -25px;
+}
+.body-of-fifth-ul>ul>li{
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+.body-of-fifth-ul{
+    margin-top: 50px;
+}
+.name-of-inform-fifth-li{
+    color: #fff;
+}
+.href-in-fifth-btn>a{
+    font-family: sans-serif;
+    background: #1032ba;
+    border: medium none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    padding: 15px 25px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+.href-in-fifth-btn>a:hover{
+    box-shadow: 0 1px 4px rgb(0 0 0 / 8%) inset, 0 0 18px rgb(255 255 0 / 80%);
+}
+.shake-div{
+    animation: shake 0.8s ease ;
+}
+@keyframes shake {
+    0%{
+        /* transform: scale(2); */
+        transform: rotateZ(-10deg) scale(1.07);
+    }
+    20%{
+        transform: rotateZ(10deg) scale(1.07);
+    }
+    40%{
+        transform: rotateZ(-10deg) scale(1.07);
+    }
+    60%{
+        transform: rotateZ(10deg) scale(1.07);
+    }
+    80%{
+        transform: rotateZ(-10deg) scale(1.07);
+    }
+    100%{
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+.sixth-chapter{
+    margin-top: 80px;
+}
+.container-of-sixth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.names-email>input,.tel-and-name>input,textarea{
+   padding: 10px; 
+   background: #000;
+   color: #c1c1c1;
+   font-size: 20px;
+   outline: none;
+   border: 1px solid #fff;
+   border-radius: 5px;
+}
+.names-email,.tel-and-name{
+    margin-bottom: 10px;
+}
+.names-email>input:hover,.tel-and-name>input:hover,textarea:hover,.send-form>a:hover{
+    box-shadow: 0px 0px 30px 0px #1032ba;
+}
+.send-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+.send-form>a{
+    display: inline-block;
+    padding: 10px 25px;
+    color: #fff;
+    background: blue;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+footer{
+    background: #060A1B;
+    box-shadow: 0px 0px 14px 0px rgb(27 0 255);
+}
+.content-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0px;
+
+}
+.content-footer>p{
+    color: #fff;
+    font-family: sans-serif;
+}
+.pilot-back{
+    position: absolute;
+    left: 170px;
+    z-index: -1;
+}
+.pilot-right-div-slider{
+    overflow-x: hidden;
+}
+.for-slider-shake{
+    width: 195%;
+    display: flex;
+    transition: 1s ease;
+}
+.second-pilot-slider{
+    margin-left: 50px;
+}
+.mens{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background: url("./photo/mens-fixed.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -90px;
+    z-index: 88;
+}
+.mens{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p-in-mens{
+    line-height: 2;
+    margin: 70px 0px;
+    font-size: 25px;
+}
+.href-in-mens{
+    background: blue;
+    border-radius: 10px;
+    padding: 20px 50px;
+    font-family: cursive;
+    white-space: nowrap;
+}
+.href-in-mens:hover{
+    box-shadow: 0px 0px 30px #2048de;
+}
+.mouse{
+    position: absolute;
+    left: 0px;
+    z-index: 9999;
+    top: -15px;
+    left: -270px;
+}
+.shadow-mouse{
+    position: absolute;
+    left: 0px;
+    z-index: 99;
+}
+.mouse-img-div{
+    position: relative;
+    z-index: 10000;
+}
+.mouse>img{
+    width: 220px;
+}
+.for-transforming{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.for-transforming>span{
+    width: 10px;
+    height: 10px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 20px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.second-circle{
+    margin-left: 50px;
+}
+.first-car-block>div>img,.second-car-block>div>img{
+    animation: scaleot 1s ease;
+}
+.ine57Shadow{
+    position: absolute;
+    z-index: -1;
+    left: 65px;
+    transform: rotate(180deg);
+    top: 120px;
+}
+.first-car-block>div>img, .second-car-block>div>img {
+    width: 345px;
+}
+@keyframes scaleot{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.shadow {
+    text-shadow: 0 -4px 0 blue, -5px 3px 10px blue, 0 3px 0 blue, 0 4px 0 blue;
+}
+@media (max-width: 2652px) and (min-width: 1925px){
+    .first-car-block>div>img, .second-car-block>div>img {
+        width: 407px;
+    }
+    .content-of-forth {
+        width: 1238px;
+    }
+    .mens {
+        height: 730px;
+    }
+    .burningman>img {
+        width: 128%;
+    }
+    .for-cars-in-first-chapter {
+        bottom: 150px;
+        left: 40%;
+    }
+    .first-img-car {
+        left: -239px;
+        bottom: 186px;
+    }
+    .second-img-car {
+        left: -136px;
+        bottom: 121px;
+    }
+    .third-img-car {
+        bottom: 11px;
+        left: -46px;
+    }
+    .e57-and-shadow {
+        bottom: 204px;
+    }
+    .pilot-back{
+        left: 24%;
+    }
+    .in-burningman {
+        width: 35px;
+        right: -64%;
+        top: 8%;
+    }
+
+}
+@media (max-width: 1920px) and (min-width: 1600px){
+    .likes{
+        margin-left: 63px;
+    }
+    .content-of-header {
+        width: 52%;
+    }
+    .pilot-title-div {
+        width: 439px;
+        height: 94px;
+    }
+    .title-of-pilot {
+        font-size: 34px;
+    }
+    .logo-left-top>img{
+        width: 290px;
+    }
+    .content-third {
+        width: 1008px;
+    }
+    .first-pilot-slider,.second-pilot-slider{
+        font-size: 28px;
+    }
+    .pilot-div{
+        height: 820px;
+    }
+    .pilot-img-div>img {
+        width: 565px;
+    }
+    .content-of-header>div,.for-none-media>div>a{
+        padding: 20px;
+        font-size: 19px;
+    }
+    .content-of-forth {
+        width: 1238px;
+    }
+    .mens {
+        height: 800px;
+    }
+    .burningman>img {
+        width: 310px;
+    }
+    .for-cars-in-first-chapter {
+        bottom: 61px;
+        left: 39%;
+    }
+    .pilot-back{
+        left: 12%;
+    }
+    .in-burningman{
+        right: -98px;
+        top: 39px;
+    }
+    .first-car-block>div>img,.second-car-block>div>img{
+        width: 444px;
+    }
+    .for-cars-in-first-chapter{
+        position: absolute;
+        bottom: 135px;
+        left: 33%;
+    }
+    .first-car-block>div,.second-car-block>div{
+        position: absolute;
+    }
+    .first-img-car {
+        left: -345px;
+        bottom: 171px;
+    }
+    .second-img-car {
+        left: -264px;
+        bottom: 80px;
+    }
+    .third-img-car{
+        bottom: -54px;
+        left: -146px;
+    }
+    .sixth-img-car {
+        bottom: 147px;
+        left: 445px;
+        z-index: 1;
+    }
+    .fifth-img-car {
+        bottom: 60px;
+        left: 415px;
+        z-index: 2;
+    }
+    .forth-img-car {
+        bottom: -19px;
+        left: 283px;
+        z-index: 3;
+    }
+    .e57-and-shadow{
+        position: absolute;
+        right: 40px;
+        bottom: 200px;
+    }
+    .burningman {
+        position: absolute;
+        left: 45%;
+        top: 31px;
+    }
+    .in-burningman {
+        right: -97px;
+        top: 41px;
+    }
+    .ine57Shadow {
+        left: 61px;
+    }
+    .content-of-header {
+        width: 52%;
+    }
+    .pilot-title-div {
+        width: 439px;
+        height: 94px;
+    }
+    .title-of-pilot {
+        font-size: 34px;
+    }
+    .logo-left-top>img{
+        width: 290px;
+    }
+    .content-third {
+        width: 1008px;
+    }
+    .first-pilot-slider,.second-pilot-slider{
+        font-size: 28px;
+    }
+    .pilot-div{
+        height: 820px;
+    }
+    .pilot-img-div>img {
+        width: 565px;
+    }
+    .content-of-header>div,.for-none-media>div>a{
+        padding: 20px;
+        font-size: 19px;
+    }
+    .content-of-forth {
+        width: 1238px;
+    }
+    .mens {
+        height: 800px;
+    }
+    .burningman>img {
+        width: 310px;
+    }
+    .for-cars-in-first-chapter {
+        bottom: 61px;
+        left: 39%;
+    }
+    .pilot-back{
+        left: 12%;
+    }
+    .first-car-block>div>img,.second-car-block>div>img{
+        width: 444px;
+    }
+    .for-cars-in-first-chapter{
+        position: absolute;
+        bottom: 135px;
+        left: 33%;
+    }
+    .first-car-block>div,.second-car-block>div{
+        position: absolute;
+    }
+    .first-img-car {
+        left: -345px;
+        bottom: 171px;
+    }
+    .second-img-car {
+        left: -264px;
+        bottom: 80px;
+    }
+    .third-img-car{
+        bottom: -54px;
+        left: -146px;
+    }
+    .sixth-img-car {
+        bottom: 147px;
+        left: 445px;
+        z-index: 1;
+    }
+    .fifth-img-car {
+        bottom: 60px;
+        left: 415px;
+        z-index: 2;
+    }
+    .forth-img-car {
+        bottom: -19px;
+        left: 283px;
+        z-index: 3;
+    }
+    .e57-and-shadow{
+        position: absolute;
+        right: 40px;
+        bottom: 200px;
+    }
+    .burningman {
+        position: absolute;
+        left: 45%;
+        top: 31px;
+    }
+}
+@media (max-width: 1343px) and (min-width: 1024px){
+    .e57-and-shadow {
+        position: absolute;
+        right: 11px;
+        bottom: 125px;
+    }
+    .forth-img-car{
+        bottom: 6px;
+        left: 296px
+    }
+    .burningman{
+        top: 30px;
+    }
+    .in-burningman {
+        right: -165px;
+        top: -6px;
+        transform: rotate(69deg) scale(3.4);
+    }
+    .logo-left-top>img{
+        width: 15vw;
+    }
+    .content-of-header {
+        width: 70%;
+    }
+    .first-car-block>div>img, .second-car-block>div>img {
+        width: 205px;
+    }
+    .for-cars-in-first-chapter {
+        left: 29%;
+        bottom: 155px;
+    }
+    .third-img-car {
+        bottom: 0px;
+        left: 40px;
+    }
+    .second-img-car {
+        left: -50px;
+        bottom: 45px;
+    }
+    .first-img-car {
+        left: -103px;
+        bottom: 83px;
+    }
+    .first-chapter-logo>img{
+        width: 370px;
+    }
+    .pilot-and-slider {
+        width: 70%;
+    }
+    .pilot-back {
+        left: 145px;
+    }
+    .face {
+        font-size: 75px;
+    }
+    .like-and-arrow{
+        width: 0px;
+    }
+    .fire-like {
+        width: 290px;
+        bottom: 220px;
+        right: -16px;
+    }
+    .arrow{
+        right: -107px;
+        bottom: 99px;
+    }
+    .container-fifth {
+        width: 97%;
+    }
+    .facebook-and-inform-third{
+        display: flex;
+        flex-direction: column;
+        margin-top: -111px;
+    }
+    .mens{
+        height: 684px;
+    }
+    .pilot-div{
+        height: 586px;
+    }
+}
+@media (max-width: 1023px) and (min-width: 767px){
+    .logo-left-top>img{
+        width: 14vw;
+    }
+    .in-burningman{
+        right: -50%;
+        top: -4%;
+    }
+    .content-of-header {
+        width: 73%;
+    }
+    .burningman>img {
+        width: 145px;
+    }
+    .first-car-block>div>img, .second-car-block>div>img {
+        width: 140px;
+    }
+    .for-cars-in-first-chapter {
+        left: 27%;
+        bottom: 122px;
+    }
+    .third-img-car {
+        bottom: 32px;
+        left: 53px;
+    }
+    .second-img-car {
+        left: 10px;
+        bottom: 70px;
+    }
+    .first-img-car {
+        left: -22px;
+        bottom: 102px;
+    }
+    .forth-img-car {
+        bottom: 41px;
+        left: 214px;
+    }
+    .sixth-img-car {
+        bottom: 95px;
+        left: 281px;
+    }
+    .fifth-img-car {
+        bottom: 66px;
+        left: 263px;
+    }
+    .e57-shadow {
+        right: -65px;
+    }
+    .e57>img {
+        width: 110px;
+    }
+    .e57-and-shadow {
+        right: 26px;
+        bottom: 167px;
+    }
+    .mens {
+        height: 712px;
+    }
+    .mouse {
+        top: -170px;
+    }
+    .pilot-and-slider {
+        width: 100%;
+    }
+    .pilot-back {
+        left: 25px;
+    }
+    .face {
+        font-size: 75px;
+    }
+    .like-and-arrow{
+        width: 0px;
+    }
+    .fire-like {
+        width: 260px;
+        bottom: 189px;
+        right: -31px;
+    }
+    .container-fifth {
+        width: 97%;
+    }
+    .content-third {
+        width: 80%;
+    }
+    .arrow{
+        width: 70px;
+        bottom: 100px;
+        right: -70px;
+    }
+    .first-shake-div,
+    .second-shake-div{
+        margin-right: 15px;
+    }
+    .third-shake-div,.first-shake-div,
+    .second-shake-div{
+        margin-bottom: 75px;
+    }
+}
+@media (max-width: 766px) and (min-width: 320px){
+    .in-burningman{
+        right: -56%;
+        top: -7%;
+    }
+    .content-of-header {
+        width: 90%;
+    }
+    .burningman>img {
+        width: 130px;
+    }
+    .first-car-block>div>img, .second-car-block>div>img {
+        width: 100px;
+    }
+    .for-cars-in-first-chapter {
+        left: 22%;
+        bottom: 151px;
+    }
+    .third-img-car {
+        bottom: 61px;
+        left: 50px;
+    }
+    .second-img-car {
+        left: 21px;
+        bottom: 88px;
+    }
+    .first-img-car {
+        left: 5px;
+        bottom: 112px;
+    }
+    .forth-img-car {
+        bottom: 65px;
+        left: 141px;
+    }
+    .sixth-img-car {
+        bottom: 95px;
+        left: 185px;
+    }
+    .fifth-img-car {
+        bottom: 74px;
+        left: 170px;
+    }
+    .first-chapter-logo>img{
+        width: 230px;
+        top: 15px;
+        left: 18px;
+    }
+    .e57-shadow {
+        right: -65px;
+    }
+    .e57>img {
+        width: 110px;
+    }
+    .e57-and-shadow {
+        right: 92px;
+        bottom: 80px;
+    }
+    .mens {
+        height: 750px;
+    }
+    .mouse {
+        top: -258px;
+    }
+    .pilot-and-slider {
+        width: 90%;
+    }
+    .pilot-back {
+        left: 25px;
+    }
+    .face {
+        font-size: 47px;
+    }
+    .fire-like {
+        width: 175px;
+        bottom: -33px;
+        right: 51px;
+    }
+    .container-fifth {
+        width: 97%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .content-third {
+        width: 80%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .arrow{
+        width: 70px;
+        width: 40px;
+        right: -22px;
+        bottom: -51px;
+    }
+    .first-shake-div,
+    .second-shake-div{
+        margin-right: 15px;
+    }
+    .third-shake-div,.first-shake-div,
+    .second-shake-div{
+        margin-bottom: 75px;
+    }
+    .burningman{
+        left: 40%;
+    }
+    .cloud1{
+        width: 424px;
+        height: 424px;
+    }
+    .like-and-arrow {
+        width: 154px;
+    }
+    .title-div-forth {
+        width: 300px;
+    }
+    .p-in-title-forth {
+        font-size: 30px;
+    }
+    .content-of-forth{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .title-bg-fifth {
+        width: 292px;
+    }
+    .title-of-fifth-p {
+        font-size: 30px;
+    }
+    .second-p-in-fifth {
+        width: 295px;
+    }
+    .head-of-fifth{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .names-email,.tel-and-name{
+        width: 275px;
+        margin: 0 auto;
+    }
+    textarea{
+        width: 90%;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .pilot-title-div {
+        width: 310px;
+    }
+    .pilot-div {
+        box-shadow: none;
+        height: 970px;
+    }
+    .pilot-and-slider{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pilot-back{
+        display: none;
+    }
+    .first-pilot-slider>p,.second-pilot-slider>p{
+        font-size: 12px;
+        width: 286px;
+    }
+    .for-transforming{
+        display: none;
+    }
+    .for-slider-shake{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .second-pilot-slider{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .for-none-media{
+        display: none;
+    }
+    .bar-burger{
+        display: block;
+    }
+    .for-media{
+        display: block;
+    }
+    .logo-left-top{
+        top: 0px;
+        z-index: 99999;
+    }
+    .first-chapter-logo>img{
+        left: 20%;
+    }
+    
+}
